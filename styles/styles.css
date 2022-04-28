@@ -90,7 +90,7 @@
   
  .servicios{
      align-items: center;
-     height: 400px;
+     height: 325px;
      background-color: #282d32;
  }
  .imgSize{
@@ -98,4 +98,27 @@
  }
  .navBarLogo{
     width: 100px
+ }
+ .titulo{
+     text-align: center;
+     color: #fff;
+ }
+ .articulo1{
+     background: #2c68a4;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+ }
+ .articulo1 img{
+    width: 400px
+ }
+ .articulo2{
+     background: #71a0cf;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+.articulo2 img{
+    width: 400px
  }
