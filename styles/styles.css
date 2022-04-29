@@ -114,18 +114,21 @@
  .articulo1{
      background: #ffffff;
      display: flex;
+     flex-direction: row;
      flex-wrap: wrap;
-     justify-content: center;
+     justify-content: space-evenly;
      
  }
  .articulo1 img{
-    width: 400px
+    width: 400px;
+
  }
  .articulo2{
      background: #608ab5;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
+     grid-row: auto;
 }
 .articulo2 img{
     width: 400px
@@ -133,3 +136,19 @@
  .size{
      padding-top: 40px;
  }
+ .flex-container {
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.flex-container > div {
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 0px;
+  
+}
+.flex-container img{
+  width: 800px;
+  
+}
