@@ -79,6 +79,10 @@
   .footer-dark .item.social > a:hover {
     opacity:0.9;
   }
+  .d-block {
+    display: block!important;
+    margin: 0 auto;
+}
   
   .footer-dark .copyright {
     text-align:center;
@@ -87,14 +91,18 @@
     font-size:13px;
     margin-bottom:0;
   }
+  .caruseltxt{
+      color: #fff;
+      text-align: center;
+  }
   
  .servicios{
      align-items: center;
-     height: 325px;
+     height: 320px;
      background-color: #282d32;
  }
  .imgSize{
-    width: 400px
+    width: 200px
  }
  .navBarLogo{
     width: 100px
@@ -104,7 +112,7 @@
      color: #fff;
  }
  .articulo1{
-     background: #2c68a4;
+     background: #ffffff;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
@@ -114,11 +122,14 @@
     width: 400px
  }
  .articulo2{
-     background: #71a0cf;
+     background: #608ab5;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
 }
 .articulo2 img{
     width: 400px
+ }
+ .size{
+     padding-top: 40px;
  }
