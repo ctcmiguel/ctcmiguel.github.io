@@ -16,7 +16,7 @@
     <title>Mogul Logistics</title>
 </head>
 <body>
-    <div>
+    <div id="top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <img src="image/logo.png" class="navBarLogo img-fluid">              
@@ -74,6 +74,58 @@
       </div>
     </div>
     </div>
+    <div id="tablaPedidos">
+        <div id="formaResgistro">
+            <form class="row g-3">
+                <div class="col-auto">
+                  <label for="nameProduct" class="visually-hidden">Producto</label>
+                  <input type="text" class="form-control" id="product" placeholder="Ingresa el producto">
+                </div>
+                <div class="col-auto">
+                  <label for="quantity" class="visually-hidden">Cantidad</label>
+                  <input type="number" class="form-control" id="productQuantity" placeholder="Cantidad">
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">Agregar</button>
+                  <button type="submit" class="btn btn-primary mb-3">Actualizar</button>
+                </div>
+              </form>
+        </div>
+        <div id="tabladeDatos">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+
+    </div>
+
  
 <div class="articulo2">
   <img src="image/truck.png" alt="" class="img-fluid">
