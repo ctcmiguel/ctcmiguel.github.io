@@ -1,5 +1,4 @@
-console.log('hola');
-productos = [
+let productos = [
     {
         product: 'Gatorade',
         quantity: 3
@@ -15,9 +14,11 @@ productos = [
 ]
 
 let mostrarProductos = (productosRecibidos) => {
+    console.log(productosRecibidos)
     document.getElementsByTagName("tbody")[0].innerHTML = '';
     productosRecibidos.forEach((element, index) =>{
-        texth1.innerHTML = `
+        let texth1 = document.createElement('tr');
+        texth1.innerHTML =`
         <td scope="row">${index+1}</td>
         <td>${element.product}</td>
         <td>${element.quantity}</td>
@@ -33,6 +34,7 @@ let mostrarProductos = (productosRecibidos) => {
         
     });
 }
+
 
 let eliminarRegistro = (parIndex) =>{
     productos = productos.filter((producto, index)=> index !== parIndex);
@@ -52,20 +54,20 @@ let actualizarRegistro = ()=>{
         alert('Debe seleccionar un registro');
         return false;
     }
-    product[position] = {
+    productos[position] = {
         product: product,
         quantity: quantity
     }
     document.getElementById('position').value = '';
     document.getElementById('product').value = '';
     document.getElementById('quantity').value = '';
-    mostrarProductos(product);
+    mostrarProductos(productos);
 } 
 let agregarRegistro = () => {
     console.log(`agregar`);
     const nuevoProducto = {
-        producto: document.getElementById('product').value,
-        quantity: document.getElementById('quantity').value,
+        product: document.getElementById('product').value,
+        quantity: document.getElementById('quantity').value
     }
     document.getElementById('product').value = '';
     document.getElementById('quantity').value = '';
